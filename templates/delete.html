@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+  <title>Delete file page</title>
+</head>
+<body>
+    <form style='padding-top:100px;padding-left:300px;padding-right:300px' action="/delete/audioFileType/audioFileID" method='POST'>
+        <h1 style="font-size:larger" >Select the file want to delete and pass ID</h1>
+        <select class="form-select" aria-label="Default select example" name="select" required='required'>
+            <option value="Song">Song</option>
+            <option value="Podcast">Podcast</option>
+            <option value="Audiobook">Audiobook</option>
+        </select><br>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" name="id" required='required' placeholder="ID" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-danger" type="submit" id="button-addon2">Delete</button>
+          </div><br>
+
+          <b style="color: rgb(211, 32, 26);font-size: 22px;">{{statement}}</b>
+        
+    
+    
+    
+    
+    
+    </form>
+</body>
+</html>
